@@ -15,30 +15,31 @@
       background-color: #00538c;
       color: #fff;
       padding: 10px;
-      display: flex;
-      justify-content: space-between;
+      text-align: center;
     }
-    nav {
-      display: flex;
-    }
-    nav a {
+    header nav a {
       color: #fff;
       text-decoration: none;
       margin: 0 10px;
     }
     main {
-      margin: 20px;
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
     }
-    .blog {
-      flex: 2;
-      margin-right: 20px;
-    }
-    .sidebar {
+    section {
       flex: 1;
-      background-color: #00538c;
-      color: #fff;
-      padding: 10px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    aside {
+      flex: 0 0 250px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     footer {
       background-color: #00538c;
@@ -53,48 +54,38 @@
 </head>
 <body>
   <header>
-    <div>
-      <img src="mavericks-logo.png" alt="Mavericks Logo" height="50">
-    </div>
     <nav>
       <a href="#">Home</a>
       <a href="#">Navigation</a>
       <a href="#">Merchandise</a>
     </nav>
+    <img src="mavericks-logo.png" alt="Dallas Mavericks Logo" style="max-width: 100px;">
   </header>
   <main>
-    <div>
-      <h1>Welcome to the Dallas Mavericks Fan Website!</h1>
-      <p>Explore the latest news, updates, and more about the Dallas Mavericks.</p>
-      <img src="mavericks-image1.jpg" alt="Mavericks Image 1" width="400">
-      <p>Description of Mavericks related content...</p>
-      <img src="mavericks-image2.jpg" alt="Mavericks Image 2" width="400">
-      <p>Description of Mavericks related content...</p>
-    </div>
-    <div class="blog">
-      <h2>Latest Blog Posts</h2>
-      <div>
-        <h3>Blog Post Title 1</h3>
-        <p>Blog post content...</p>
-      </div>
-      <div>
-        <h3>Blog Post Title 2</h3>
-        <p>Blog post content...</p>
-      </div>
-    </div>
-    <div class="sidebar">
-      <h2>Scores & News</h2>
-      <p>Latest scores and news updates...</p>
-    </div>
+    <section>
+      <h2>Content Section 1</h2>
+      <p>Description of Mavericks related content.</p>
+      <img src="mavericks-image1.jpg" alt="Mavericks Image 1" style="width: 100%;">
+    </section>
+    <section>
+      <h2>Content Section 2</h2>
+      <p>Description of Mavericks related content.</p>
+      <img src="mavericks-image2.jpg" alt="Mavericks Image 2" style="width: 100%;">
+    </section>
+    <section>
+      <h2>Blog</h2>
+      <p>Filler text for the blog section.</p>
+    </section>
+    <aside>
+      <h2>Scores and News</h2>
+      <p>Content for scores and news sidebar.</p>
+    </aside>
   </main>
   <footer>
-    <p>&copy; 2022 Dallas Mavericks Fan Website</p>
+    &copy; 2023 Dallas Mavericks Fan Website
   </footer>
   <script>
-    // JavaScript for fetching and displaying real scores and news
-    // This is a placeholder for demonstration purposes
-    const scoresAndNews = document.querySelector('.sidebar');
-    scoresAndNews.innerHTML = '<h2>Scores & News</h2><p>Real-time scores and news...</p>';
+    // JavaScript functionality can be added here
   </script>
 </body>
 </html>
